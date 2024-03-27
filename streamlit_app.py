@@ -1,82 +1,59 @@
-import streamlit as st
-import replicate
 import os
+import streamlit as st
+from llama_index.llms.openai import OpenAI as LlamaOpenAI
+from llama_index.core import Settings, VectorStoreIndex, SimpleDirectoryReader
 
-# App title
-st.set_page_config(page_title="🦙💬 Llama 2 Chatbot")
+def setup_session_variables():
+    if "openai_model" not in st.session_state:
+        st.session_state["openai_model"] = "gpt-4-turbo-preview"
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
 
-# Replicate Credentials
-with st.sidebar:
-    st.title('🦙💬 Llama 2 Chatbot')
-    if 'REPLICATE_API_TOKEN' in st.secrets:
-        st.success('API key already provided!', icon='✅')
-        replicate_api = st.secrets['REPLICATE_API_TOKEN']
+def display_messages():
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+
+def process_prompt(prompt, my_api_key, my_directory_path):
+    Settings.llm = LlamaOpenAI(
+        system_prompt = "Imagine you're a bank's wisest advisor, whose sole purpose is to navigate through the sea \
+of financial queries regarding loans. Your guidance lights the way for those seeking to embark on the journey of securing \
+a loan, unraveling the complexities of terms, conditions, and options available in the bank's treasure trove of data. \
+Should a question arise that's beyond the mapped territories, gracefully suggest alternative routes of exploration, \
+always ensuring your narrative enriches their understanding and decision-making process.",
+        model = st.session_state["openai_model"],
+        openai_api_key = my_api_key,
+        max_tokens = 450
+    )
+    if os.path.isdir(my_directory_path):
+        return search_directory(prompt, my_directory_path)
     else:
-        replicate_api = st.text_input('Enter Replicate API token:', type='password')
-        if not (replicate_api.startswith('r8_') and len(replicate_api)==40):
-            st.warning('Please enter your credentials!', icon='⚠️')
-        else:
-            st.success('Proceed to entering your prompt message!', icon='👉')
+        st.error(f"The path '{my_directory_path}' does not lead to a realm of knowledge. Please, correct it.")
+        return None
 
-    # Refactored from https://github.com/a16z-infra/llama2-chatbot
-    st.subheader('Models and parameters')
-    selected_model = st.sidebar.selectbox('Choose a Llama2 model', ['Llama2-7B', 'Llama2-13B', 'Llama2-70B'], key='selected_model')
-    if selected_model == 'Llama2-7B':
-        llm = 'a16z-infra/llama7b-v2-chat:4f0a4744c7295c024a1de15e1a63c880d3da035fa1f49bfd344fe076074c8eea'
-    elif selected_model == 'Llama2-13B':
-        llm = 'a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5'
-    else:
-        llm = 'replicate/llama70b-v2-chat:e951f18578850b652510200860fc4ea62b3b16fac280f83ff32282f87bbd2e48'
-    
-    temperature = st.sidebar.slider('temperature', min_value=0.01, max_value=5.0, value=0.1, step=0.01)
-    top_p = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, step=0.01)
-    max_length = st.sidebar.slider('max_length', min_value=64, max_value=4096, value=512, step=8)
-    
-    st.markdown('📖 Learn how to build this app in this [blog](https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/)!')
-os.environ['REPLICATE_API_TOKEN'] = replicate_api
+def search_directory(prompt, my_directory_path):
+    documents = SimpleDirectoryReader(my_directory_path).load_data()
+    index = VectorStoreIndex.from_documents(documents)
+    query_engine = index.as_query_engine(streaming=True)
+    streaming_response = query_engine.query(prompt)
+    response_gen = streaming_response.response_gen
+    return st.write_stream(response_gen)
 
-# Store LLM generated responses
-if "messages" not in st.session_state.keys():
-    st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
+def run_app():
+    st.sidebar.header("Configuration")
+    my_api_key = st.sidebar.text_input("Your OpenAI API key:", type="password")
+    my_directory_path = st.sidebar.text_input("Your data directory path:")
 
-# Display or clear chat messages
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.write(message["content"])
+    setup_session_variables()
+    display_messages()
 
-def clear_chat_history():
-    st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
-st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
+    if prompt := st.chat_input("How may I assist you today?"):
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
+        response = process_prompt(prompt, my_api_key, my_directory_path)
+        if response:
+            st.session_state.messages.append({"role": "assistant", "content": response})
 
-# Function for generating LLaMA2 response
-def generate_llama2_response(prompt_input):
-    string_dialogue = "You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only respond once as 'Assistant'."
-    for dict_message in st.session_state.messages:
-        if dict_message["role"] == "user":
-            string_dialogue += "User: " + dict_message["content"] + "\n\n"
-        else:
-            string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
-    output = replicate.run(llm, 
-                           input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ",
-                                  "temperature":temperature, "top_p":top_p, "max_length":max_length, "repetition_penalty":1})
-    return output
-
-# User-provided prompt
-if prompt := st.chat_input(disabled=not replicate_api):
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.write(prompt)
-
-# Generate a new response if last message is not from assistant
-if st.session_state.messages[-1]["role"] != "assistant":
-    with st.chat_message("assistant"):
-        with st.spinner("Thinking..."):
-            response = generate_llama2_response(prompt)
-            placeholder = st.empty()
-            full_response = ''
-            for item in response:
-                full_response += item
-                placeholder.markdown(full_response)
-            placeholder.markdown(full_response)
-    message = {"role": "assistant", "content": full_response}
-    st.session_state.messages.append(message)
+if __name__ == "__main__":
+    run_app()
