@@ -24,7 +24,7 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/bank-loan-advisor-rag.git
-cd bank-loan-advisor-rag
+cd Streamlit-chatbot
 ```
 
 Install the required Python packages:
@@ -34,10 +34,10 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-To run the application, navigate to the project directory and execute the following command:
+To run the application, navigate to the project directory and execute the following command. Don;t forget to replace the "script_name" with the actual file name you want to run:
 
 ```bash
-streamlit run gui_travel_recommendation_rag.py
+streamlit run script_name.py
 ```
 
 After launching the application, follow these steps:
