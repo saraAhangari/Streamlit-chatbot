@@ -23,7 +23,7 @@ Before running the Bank Loan Advisor RAG, ensure you have the following:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/bank-loan-advisor-rag.git
+git clone https://github.com/saraAhangari/Streamlit-chatbot.git
 cd Streamlit-chatbot
 ```
 
