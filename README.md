@@ -44,7 +44,7 @@ To run the application, navigate to the project directory and execute the follow
 streamlit run script_name.py
 ```
 
-After launching the application, follow these steps:
+After launching the application, if you're running streamlit_app.py follow these steps:
 
 1. Input your **OpenAI API key** in the sidebar. This is required for the RAG model to generate responses.
 2. Specify the **data directory path** where your loan-related documents are stored. The application will use these documents to retrieve information and assist users with their queries.
