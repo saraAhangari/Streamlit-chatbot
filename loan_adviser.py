@@ -4,10 +4,11 @@ from llama_index.llms.openai import OpenAI as LlamaOpenAI
 from llama_index.core import Settings, VectorStoreIndex, SimpleDirectoryReader
 import toml
 
-secrets = toml.load("secrets.toml")
+secrets_path = os.path.join(".streamlit", "secrets.toml")
+secrets = toml.load(secrets_path)
 
-my_api_key = secrets["OPENAI_API_KEY"]
-my_directory_path = secrets["DATA_DIRECTORY_PATH"]
+my_api_key = "sk-*****"
+my_directory_path = "Set your data directory"
 
 def setup_session_variables():
     if "openai_model" not in st.session_state:
