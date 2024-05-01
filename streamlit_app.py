@@ -14,17 +14,19 @@ def display_messages():
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-def process_prompt(prompt, my_api_key, my_directory_path):
+def process_prompt(prompt, my_directory_path):
     Settings.llm = LlamaOpenAI(
-        system_prompt = "Imagine you're a bank's wisest advisor, whose sole purpose is to navigate through the sea \
-of financial queries regarding loans. Your guidance lights the way for those seeking to embark on the journey of securing \
-a loan, unraveling the complexities of terms, conditions, and options available in the bank's treasure trove of data. \
-Should a question arise that's beyond the mapped territories, gracefully suggest alternative routes of exploration, \
-always ensuring your narrative enriches their understanding and decision-making process.",
-        model = st.session_state["openai_model"],
-        openai_api_key = my_api_key,
-        max_tokens = 450
-    )
+    system_prompt = "As the most knowledgeable advisor within the digital realm, this LLM model is designed to navigate \
+    the vast ocean of information contained in a specific directory provided by the user. With the key to access (user's own API key), \
+    it dives deep into the specified data, ready to surface with insights and answers. It's your go-to source for unravelling \
+    the intricacies found within your chosen path of data. In cases where inquiries stray beyond the bounds of the directory's knowledge, \
+    the model will humbly apologize, indicating its expertise is confined to the realms of the specified information. It's here to \
+    enrich your understanding and guide your decision-making process within the context of your specified data.",
+    model = st.session_state["openai_model"],
+    openai_api_key = "ENTER_YOUR_API_KEY_HERE",
+    max_tokens = 450
+)
+
     if os.path.isdir(my_directory_path):
         return search_directory(prompt, my_directory_path)
     else:
