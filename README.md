@@ -1,6 +1,10 @@
 # Bank Loan Advisor RAG
 
 The Bank Loan Advisor RAG is a Streamlit application designed to assist users with inquiries related to obtaining loans from a bank. Leveraging the power of the Retrieval-Augmented Generation model, this application provides personalized advice by retrieving relevant information from a predefined data directory and generating responses to user queries. Whether you're looking for information on loan eligibility, interest rates, or document requirements, the Bank Loan Advisor is here to guide you through the maze of banking procedures with ease and clarity.
+There's two python files in this reposiroty:
+- streamlit_app.py : you need to set your own openai_key and data directory
+- loan_adviser.py : you can set the necessary information in secrets.tomel and this python file and use the chatbot directly. 
+
 
 ## Features
 
@@ -40,7 +44,7 @@ To run the application, navigate to the project directory and execute the follow
 streamlit run script_name.py
 ```
 
-After launching the application, follow these steps:
+After launching the application, if you're running streamlit_app.py follow these steps:
 
 1. Input your **OpenAI API key** in the sidebar. This is required for the RAG model to generate responses.
 2. Specify the **data directory path** where your loan-related documents are stored. The application will use these documents to retrieve information and assist users with their queries.
