@@ -70,6 +70,8 @@ def search_content(prompt, content):
     response_gen = streaming_response.response_gen
     return st.write_stream(response_gen)
 
+  
+
 def run_app():
     image = Image.open('logo.png')
     st.sidebar.image(image, width=70)
