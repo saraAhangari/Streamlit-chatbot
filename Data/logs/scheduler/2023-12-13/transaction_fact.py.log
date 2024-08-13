@@ -1,0 +1,762 @@
+[2023-12-13T15:13:25.305+0000] {processor.py:157} INFO - Started process (PID=582) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:13:25.305+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:13:25.307+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:13:25.307+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:13:25.310+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:13:25.309+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 107
+    (
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:13:25.310+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:13:25.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.032 seconds
+[2023-12-13T15:13:55.598+0000] {processor.py:157} INFO - Started process (PID=639) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:13:55.598+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:13:55.600+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:13:55.600+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:13:55.604+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:13:55.603+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 107
+    (
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:13:55.604+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:13:55.628+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:14:26.014+0000] {processor.py:157} INFO - Started process (PID=696) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:14:26.015+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:14:26.018+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:14:26.017+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:14:26.023+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:14:26.020+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 107
+    (
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:14:26.024+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:14:26.049+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.038 seconds
+[2023-12-13T15:14:56.468+0000] {processor.py:157} INFO - Started process (PID=753) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:14:56.469+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:14:56.471+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:14:56.471+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:14:56.474+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:14:56.474+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 107
+    (
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:14:56.475+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:14:56.500+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.036 seconds
+[2023-12-13T15:15:26.575+0000] {processor.py:157} INFO - Started process (PID=810) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:26.576+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:15:26.578+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:26.578+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:26.581+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:26.581+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 107
+    (
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:15:26.581+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:26.608+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.035 seconds
+[2023-12-13T15:15:28.639+0000] {processor.py:157} INFO - Started process (PID=811) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:28.639+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:15:28.641+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:28.641+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:28.644+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:28.643+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 112
+    >>PythonOperator(
+    ^
+SyntaxError: invalid syntax
+[2023-12-13T15:15:28.644+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:28.668+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.032 seconds
+[2023-12-13T15:15:31.761+0000] {processor.py:157} INFO - Started process (PID=815) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:31.762+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:15:31.763+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:31.763+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:31.766+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:31.765+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 107
+    (
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:15:31.766+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:31.792+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:15:35.348+0000] {processor.py:157} INFO - Started process (PID=843) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:35.349+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:15:35.350+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:35.350+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:35.353+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:35.352+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 112
+    >>PythonOperator(
+    ^
+SyntaxError: invalid syntax
+[2023-12-13T15:15:35.353+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:35.384+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.039 seconds
+[2023-12-13T15:15:38.197+0000] {processor.py:157} INFO - Started process (PID=858) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:38.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:15:38.199+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:38.199+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:38.202+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:38.201+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 112
+    >>PythonOperator(
+    ^
+SyntaxError: invalid syntax
+[2023-12-13T15:15:38.202+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:38.228+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:15:51.639+0000] {processor.py:157} INFO - Started process (PID=869) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:51.646+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:15:51.648+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:51.648+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:51.651+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:51.650+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    PythonOperator(
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:15:51.651+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:51.674+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.038 seconds
+[2023-12-13T15:15:54.658+0000] {processor.py:157} INFO - Started process (PID=870) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:54.658+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:15:54.660+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:54.660+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:54.663+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:15:54.662+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    PythonOperator(
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:15:54.663+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:15:54.685+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.030 seconds
+[2023-12-13T15:16:02.146+0000] {processor.py:157} INFO - Started process (PID=878) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:02.147+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:02.149+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:02.149+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:02.151+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:02.151+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 112
+    >>PythonOperator(
+    ^
+SyntaxError: invalid syntax
+[2023-12-13T15:16:02.152+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:02.175+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.031 seconds
+[2023-12-13T15:16:07.363+0000] {processor.py:157} INFO - Started process (PID=918) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:07.363+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:07.365+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:07.365+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:07.368+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:07.367+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 112
+    >>PythonOperator(
+    ^
+SyntaxError: invalid syntax
+[2023-12-13T15:16:07.368+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:07.392+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.032 seconds
+[2023-12-13T15:16:30.905+0000] {processor.py:157} INFO - Started process (PID=930) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:30.906+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:30.909+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:30.908+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:30.913+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:30.911+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 112
+    >>PythonOperator(
+    ^
+SyntaxError: invalid syntax
+[2023-12-13T15:16:30.913+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:30.940+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.038 seconds
+[2023-12-13T15:16:34.067+0000] {processor.py:157} INFO - Started process (PID=944) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:34.068+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:34.070+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:34.070+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:34.073+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:34.072+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 112
+    >>PythonOperator(
+    ^
+SyntaxError: invalid syntax
+[2023-12-13T15:16:34.073+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:34.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:16:37.188+0000] {processor.py:157} INFO - Started process (PID=963) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:37.189+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:37.191+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:37.191+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:37.201+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:37.511+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:37.510+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:16:37.547+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:37.547+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:16:37.600+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.416 seconds
+[2023-12-13T15:16:38.401+0000] {processor.py:157} INFO - Started process (PID=977) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:38.402+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:38.406+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:38.405+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:38.421+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:38.418+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 112, in <module>
+    uPythonOperator(
+NameError: name 'uPythonOperator' is not defined
+[2023-12-13T15:16:38.421+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:38.455+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.057 seconds
+[2023-12-13T15:16:42.826+0000] {processor.py:157} INFO - Started process (PID=981) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:42.827+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:42.829+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:42.828+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:42.838+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:42.859+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:42.858+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:16:42.893+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:42.892+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:16:42.915+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.094 seconds
+[2023-12-13T15:16:44.944+0000] {processor.py:157} INFO - Started process (PID=989) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:44.945+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:44.946+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:44.946+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:44.959+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:44.979+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:44.979+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:16:45.046+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:45.046+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:16:45.090+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.148 seconds
+[2023-12-13T15:16:49.978+0000] {processor.py:157} INFO - Started process (PID=990) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:49.979+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:49.981+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:49.981+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:49.985+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:49.984+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 116
+    fetch >>
+                ^
+SyntaxError: invalid syntax
+[2023-12-13T15:16:49.986+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:50.028+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.054 seconds
+[2023-12-13T15:16:52.008+0000] {processor.py:157} INFO - Started process (PID=991) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:52.009+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:52.013+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:52.012+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:52.028+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:52.055+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:52.055+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:16:52.101+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:52.101+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:16:52.131+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.129 seconds
+[2023-12-13T15:16:53.078+0000] {processor.py:157} INFO - Started process (PID=992) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:53.079+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:53.082+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:53.082+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:53.094+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:53.120+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:53.119+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:16:53.166+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:53.166+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:16:53.199+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.124 seconds
+[2023-12-13T15:16:56.177+0000] {processor.py:157} INFO - Started process (PID=993) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:56.177+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:16:56.179+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:56.179+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:56.182+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:16:56.181+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    fetch = PythonOperator(
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:16:56.182+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:16:56.208+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:17:00.322+0000] {processor.py:157} INFO - Started process (PID=996) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:00.323+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:00.324+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:00.324+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:00.327+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:00.327+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    fetch = PythonOperator(
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:17:00.328+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:00.355+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.035 seconds
+[2023-12-13T15:17:03.262+0000] {processor.py:157} INFO - Started process (PID=1006) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:03.263+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:03.265+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:03.265+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:03.269+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:03.268+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    fetch = PythonOperator(
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:17:03.270+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:03.302+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.044 seconds
+[2023-12-13T15:17:05.876+0000] {processor.py:157} INFO - Started process (PID=1017) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:05.877+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:05.878+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:05.878+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:05.882+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:05.881+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 106
+    )
+     ^
+SyntaxError: invalid syntax
+[2023-12-13T15:17:05.882+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:05.911+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.038 seconds
+[2023-12-13T15:17:30.146+0000] {processor.py:157} INFO - Started process (PID=1055) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:30.148+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:30.149+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:30.149+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:30.152+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:30.152+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 106
+    ) as dag
+           ^
+SyntaxError: invalid syntax
+[2023-12-13T15:17:30.153+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:30.175+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.032 seconds
+[2023-12-13T15:17:32.160+0000] {processor.py:157} INFO - Started process (PID=1056) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:32.161+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:32.163+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:32.163+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:32.166+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:32.165+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 106
+    ) as dag
+           ^
+SyntaxError: invalid syntax
+[2023-12-13T15:17:32.166+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:32.193+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.035 seconds
+[2023-12-13T15:17:34.013+0000] {processor.py:157} INFO - Started process (PID=1065) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:34.014+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:34.016+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:34.016+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:34.019+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:34.018+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 107
+    fetch = PythonOperator(
+    ^
+IndentationError: expected an indented block
+[2023-12-13T15:17:34.019+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:34.043+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:17:37.131+0000] {processor.py:157} INFO - Started process (PID=1083) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:37.132+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:37.134+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:37.133+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:37.142+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:37.141+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 116, in <module>
+    fetch >> update
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 103, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 261, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 231, in _set_relatives
+    raise AirflowException(
+airflow.exceptions.AirflowException: Tried to create relationships between tasks that don't have DAGs yet. Set the DAG for at least one task and try again: [<Task(PythonOperator): fetch_data_from_postgres>, <Task(PythonOperator): update_transaction_fact>]
+[2023-12-13T15:17:37.143+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:37.169+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.041 seconds
+[2023-12-13T15:17:38.712+0000] {processor.py:157} INFO - Started process (PID=1093) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:38.712+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:38.714+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:38.714+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:38.717+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:38.716+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:17:38.717+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:38.746+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.038 seconds
+[2023-12-13T15:17:41.965+0000] {processor.py:157} INFO - Started process (PID=1104) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:41.966+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:17:41.968+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:41.968+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:41.971+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:17:41.971+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:17:41.972+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:17:42.114+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.151 seconds
+[2023-12-13T15:18:03.745+0000] {processor.py:157} INFO - Started process (PID=1119) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:03.746+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:18:03.748+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:18:03.748+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:03.751+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:18:03.750+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:18:03.752+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:03.777+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.035 seconds
+[2023-12-13T15:18:08.308+0000] {processor.py:157} INFO - Started process (PID=1148) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:08.309+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:18:08.310+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:18:08.310+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:08.313+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:18:08.313+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:18:08.314+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:08.337+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.032 seconds
+[2023-12-13T15:18:38.835+0000] {processor.py:157} INFO - Started process (PID=1198) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:38.835+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:18:38.838+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:18:38.837+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:38.840+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:18:38.840+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 108
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:18:38.841+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:18:38.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:19:00.373+0000] {processor.py:157} INFO - Started process (PID=1232) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:00.374+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:00.376+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:00.376+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:00.380+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:00.379+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 124
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:19:00.380+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:00.406+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.036 seconds
+[2023-12-13T15:19:08.705+0000] {processor.py:157} INFO - Started process (PID=1256) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:08.706+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:08.708+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:08.708+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:08.711+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:08.710+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 124
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:19:08.711+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:08.736+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:19:12.819+0000] {processor.py:157} INFO - Started process (PID=1277) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:12.821+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:12.823+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:12.823+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:12.826+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:12.825+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 124
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:19:12.826+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:12.851+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.035 seconds
+[2023-12-13T15:19:24.125+0000] {processor.py:157} INFO - Started process (PID=1289) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:24.127+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:24.129+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:24.129+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:24.132+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:24.132+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 128
+    )
+    ^
+SyntaxError: unmatched ')'
+[2023-12-13T15:19:24.133+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:24.157+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.034 seconds
+[2023-12-13T15:19:32.272+0000] {processor.py:157} INFO - Started process (PID=1292) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:32.273+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:32.275+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:32.275+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:32.278+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:32.277+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 124
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:19:32.278+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:32.301+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.031 seconds
+[2023-12-13T15:19:41.998+0000] {processor.py:157} INFO - Started process (PID=1324) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:41.999+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:42.002+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:42.001+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:42.006+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:42.005+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 124
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:19:42.007+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:42.037+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.042 seconds
+[2023-12-13T15:19:49.036+0000] {processor.py:157} INFO - Started process (PID=1348) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:49.036+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:49.038+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:49.038+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:49.041+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:49.040+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 124
+    fetch = PythonOperator(
+          ^
+SyntaxError: invalid syntax
+[2023-12-13T15:19:49.041+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:49.065+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.032 seconds
+[2023-12-13T15:19:54.063+0000] {processor.py:157} INFO - Started process (PID=1349) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:54.064+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:54.066+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:54.066+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:54.074+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:54.073+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 119, in <module>
+    python_callable=update_turnover_per_account_type,
+NameError: name 'update_turnover_per_account_type' is not defined
+[2023-12-13T15:19:54.074+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:54.100+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.039 seconds
+[2023-12-13T15:19:57.117+0000] {processor.py:157} INFO - Started process (PID=1350) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:57.118+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:57.120+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:57.119+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:57.129+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:57.128+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/transaction_fact.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/transaction_fact.py", line 119, in <module>
+    python_callable=update_turnover_per_account_type,
+NameError: name 'update_turnover_per_account_type' is not defined
+[2023-12-13T15:19:57.129+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:57.153+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.038 seconds
+[2023-12-13T15:19:59.145+0000] {processor.py:157} INFO - Started process (PID=1351) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:59.146+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:19:59.148+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:59.148+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:59.158+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:19:59.270+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:59.270+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:19:59.296+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:19:59.296+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:19:59.318+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.176 seconds
+[2023-12-13T15:20:02.480+0000] {processor.py:157} INFO - Started process (PID=1354) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:02.480+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:20:02.482+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:02.482+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:02.491+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:02.508+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:02.508+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:20:02.538+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:02.537+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:20:02.558+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.082 seconds
+[2023-12-13T15:20:19.217+0000] {processor.py:157} INFO - Started process (PID=1408) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:19.225+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:20:19.227+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:19.226+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:19.235+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:19.252+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:19.252+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:20:19.281+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:19.281+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:20:19.303+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.088 seconds
+[2023-12-13T15:20:49.396+0000] {processor.py:157} INFO - Started process (PID=1466) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:49.397+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:20:49.399+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:49.399+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:49.406+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:20:49.423+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:49.423+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:20:49.448+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:20:49.448+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:20:49.465+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.071 seconds
+[2023-12-13T15:21:19.570+0000] {processor.py:157} INFO - Started process (PID=1526) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:21:19.571+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:21:19.573+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:21:19.573+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:21:19.582+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:21:19.747+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:21:19.747+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:21:19.779+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:21:19.779+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:21:19.801+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.235 seconds
+[2023-12-13T15:21:49.934+0000] {processor.py:157} INFO - Started process (PID=1583) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:21:49.935+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:21:49.937+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:21:49.936+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:21:49.945+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:21:49.969+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:21:49.968+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:21:50.000+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:21:50.000+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:21:50.018+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.087 seconds
+[2023-12-13T15:22:20.068+0000] {processor.py:157} INFO - Started process (PID=1638) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:22:20.069+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:22:20.073+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:22:20.073+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:22:20.086+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:22:20.120+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:22:20.120+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:22:20.153+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:22:20.153+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:22:20.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.116 seconds
+[2023-12-13T15:22:50.643+0000] {processor.py:157} INFO - Started process (PID=1695) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:22:50.644+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:22:50.644+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:22:50.644+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:22:50.654+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:22:50.685+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:22:50.684+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:22:50.717+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:22:50.716+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:22:50.735+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.095 seconds
+[2023-12-13T15:23:21.142+0000] {processor.py:157} INFO - Started process (PID=1751) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:23:21.143+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:23:21.144+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:23:21.143+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:23:21.152+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:23:21.179+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:23:21.178+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:23:21.211+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:23:21.211+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:23:21.235+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.096 seconds
+[2023-12-13T15:23:52.025+0000] {processor.py:157} INFO - Started process (PID=1808) to work on /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:23:52.026+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transaction_fact.py for tasks to queue
+[2023-12-13T15:23:52.027+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:23:52.027+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:23:52.035+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_transaction_fact']) retrieved from /opt/airflow/dags/transaction_fact.py
+[2023-12-13T15:23:52.057+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:23:52.057+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-13T15:23:52.083+0000] {logging_mixin.py:154} INFO - [2023-12-13T15:23:52.083+0000] {dag.py:3722} INFO - Setting next_dagrun for daily_transaction_fact to 2023-12-12T00:00:00+00:00, run_after=2023-12-13T00:00:00+00:00
+[2023-12-13T15:23:52.101+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transaction_fact.py took 0.079 seconds
