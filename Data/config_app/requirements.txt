@@ -1,0 +1,8 @@
+psycopg2-binary
+requests
+confluent_kafka
+asyncpg
+asyncio
+faust-streaming[prometheus]
+kafka-python
+aiokafka==0.8.1
