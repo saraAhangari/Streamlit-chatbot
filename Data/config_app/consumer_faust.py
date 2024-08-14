@@ -1,6 +1,7 @@
-import faust
-import asyncpg
 from datetime import datetime
+
+import asyncpg
+import faust
 import pytz
 
 app = faust.App("faust_streaming", broker="kafka://kafka:9092")

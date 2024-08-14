@@ -1,6 +1,7 @@
+import json
+
 import psycopg2
 import requests
-import json
 
 
 def config_debezium_connector():
