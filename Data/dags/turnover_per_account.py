@@ -1,10 +1,10 @@
-from datetime import datetime, timedelta
 from collections import defaultdict
+from datetime import datetime, timedelta
 
+import psycopg2
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
-import psycopg2
 
 postgres_conn_config = {
     "user": "postgres",
