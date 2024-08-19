@@ -1,9 +1,10 @@
 import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
 from llama_index.core import Document, VectorStoreIndex
-
 from database import query_user_data
 from web_crawler import crawl_websites
+from utils import split_text, generate_embeddings, store_embeddings, retrieve_top_k_chunks
+import chromadb
 
 system_prompt = """
     You are a helpful assistant for BluBank. Your role is to answer questions by providing 
@@ -15,7 +16,7 @@ system_prompt = """
     you have or if for any reason you cannot answer, politely apologize and inform the user that they
     will be connected to an expert. Always respond in the language the user is speaking, and if the user
     switches languages, adapt your response to match their language.
-    """
+"""
 
 def extract_account_number(prompt: str) -> str:
     """
@@ -29,9 +30,7 @@ def extract_account_number(prompt: str) -> str:
     """
     import re
     match = re.search(r'\b\d{5}\b', prompt)  
-    if match:
-        return match.group(0)
-    return None
+    return match.group(0) if match else None
 
 def generate_personalized_response(user_data: dict) -> str:
     """
@@ -47,10 +46,9 @@ def generate_personalized_response(user_data: dict) -> str:
     response += f"گردش حساب: {user_data['turnover']} \n"
     return response
 
-
 def search_content(prompt: str, content: str) -> str:
     """
-    Searches the provided content for information relevant to the user's prompt and returns the response as a string.
+    Search the provided content for information relevant to the user's prompt and return the response as a string.
 
     Args:
         prompt (str): The user's query or input.
@@ -66,7 +64,6 @@ def search_content(prompt: str, content: str) -> str:
     response_gen = streaming_response.response_gen
     return st.write_stream(response_gen)
 
-
 def process_prompt(prompt: str, urls: list, engine) -> str:
     """
     Process the user's prompt to generate an appropriate response by checking the database and crawling websites.
@@ -80,29 +77,20 @@ def process_prompt(prompt: str, urls: list, engine) -> str:
         str: Generated response text.
     """
     account_number = extract_account_number(prompt)
-    
-    # Append user message to chat history
-    st.session_state['chat_history'].add_message(HumanMessage(content=prompt))
-   
     if account_number:
         user_data = query_user_data(engine, account_number)
         if user_data:
-            personalized_response = generate_personalized_response(user_data)
-            
-            # Append assistant message to chat history
-            st.session_state['chat_history'].add_message(AIMessage(content=personalized_response))
-            st.session_state['messages'].append({'role': 'assistant', 'content': personalized_response})
-            return personalized_response
+            return generate_personalized_response(user_data)
         else:
-            st.error('No data found for the provided account number.')
-            return None
-    else:
-        crawled_content = crawl_websites(urls)
-        if not crawled_content:
-            st.error('No content was retrieved from the URLs provided.')
-            return None
-        response = search_content(prompt, crawled_content)
-        # Append assistant message to chat history
-        st.session_state['chat_history'].add_message(AIMessage(content=response))
-        return response
+            return "Sorry, your account number is not valid."
 
+    web_content = crawl_websites(urls)
+    text_chunks = split_text(web_content)
+    embeddings = generate_embeddings(text_chunks)
+    client = chromadb.Client()
+    collection = client.create_collection("web_content")
+    store_embeddings(embeddings, text_chunks, collection)
+    query_embedding = generate_embeddings([prompt])[0]
+    top_k_chunks = retrieve_top_k_chunks(query_embedding, collection)
+    selected_chunks = "\n".join(top_k_chunks)
+    return search_content(prompt, selected_chunks)

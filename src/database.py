@@ -1,16 +1,14 @@
 import logging
-
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
 from sqlalchemy.exc import SQLAlchemyError
-
 
 def get_postgres_connection(config: dict) -> Engine:
     """
     Establish a connection to the PostgreSQL database.
 
     Args:
-        config (dict): Database configuration containing keys such as 'user', 'password', 'host', 'port', and 'dbname'.
+        config (dict): Configuration dictionary containing database connection details.
 
     Returns:
         Engine: SQLAlchemy Engine object for the PostgreSQL connection, or None if the connection fails.

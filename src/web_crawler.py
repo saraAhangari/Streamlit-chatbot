@@ -1,9 +1,7 @@
 import logging
-
 import requests
 import streamlit as st
 from bs4 import BeautifulSoup
-
 
 def crawl_webpage(url: str) -> str:
     """
