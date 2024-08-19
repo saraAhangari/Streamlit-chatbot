@@ -1,20 +1,15 @@
 import streamlit as st
-from langchain_community.chat_message_histories.in_memory import \
-    ChatMessageHistory
 from PIL import Image
 
 from chat import process_prompt
 from database import get_postgres_connection
-from utils import display_messages, load_secrets, setup_session_variables
+from utils import load_secrets, setup_session_variables
 
-# Initialize ChatMessageHistory
 if 'chat_history' not in st.session_state:
-    st.session_state['chat_history'] = ChatMessageHistory()
+    st.session_state['chat_history'] = []
 
 def run_app() -> None:
-    """
-    Main function to run the Streamlit app.
-    """
+    """Runs the Streamlit app for the chat interface."""
     image = Image.open('logo.png')
     st.sidebar.image(image, width=70)
 
@@ -26,14 +21,22 @@ def run_app() -> None:
     urls = secrets['CRAWLER_URLS']
     engine = get_postgres_connection(secrets['postgres'])
 
+    if not engine:
+        st.error("Failed to connect to the database.")
+        return
+    
     setup_session_variables()
-    display_messages()
 
-    if prompt := st.chat_input("How may I assist you today?"):
-        st.session_state["messages"].append({"role": "user", "content": prompt})
+    for chat in st.session_state.chat_history:
+        st.chat_message(chat["role"]).markdown(chat["content"])
+
+    prompt = st.chat_input("Ask me anything...")
+
+    if prompt:
         response = process_prompt(prompt, urls, engine)
-        if response:
-            st.session_state["messages"].append({"role": "assistant", "content": response})
+        st.chat_message("user").markdown(prompt)
+        st.session_state.chat_history.append({"role": "user", "content": prompt})
+        st.session_state.chat_history.append({"role": "assistant", "content": response})
 
 if __name__ == "__main__":
     run_app()
