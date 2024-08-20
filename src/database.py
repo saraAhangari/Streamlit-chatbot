@@ -1,7 +1,9 @@
 import logging
+
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
 from sqlalchemy.exc import SQLAlchemyError
+
 
 def get_postgres_connection(config: dict) -> Engine:
     """

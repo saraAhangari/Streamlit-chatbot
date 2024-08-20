@@ -1,8 +1,10 @@
-import os
 import csv
-from utils import split_text, load_secrets
+import os
+
 from database import get_postgres_connection
+from utils import load_secrets, split_text
 from web_crawler import crawl_websites
+
 
 def extract_chunks_to_csv(text: str, csv_path: str, chunk_size: int = 500, overlap: int = 50) -> None:
     """

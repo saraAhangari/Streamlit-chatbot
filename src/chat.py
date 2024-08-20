@@ -1,10 +1,12 @@
+import chromadb
 import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
 from llama_index.core import Document, VectorStoreIndex
+
 from database import query_user_data
+from utils import (generate_embeddings, retrieve_top_k_chunks, split_text,
+                   store_embeddings)
 from web_crawler import crawl_websites
-from utils import split_text, generate_embeddings, store_embeddings, retrieve_top_k_chunks
-import chromadb
 
 system_prompt = """
     You are a helpful assistant for BluBank. Your role is to answer questions by providing 
