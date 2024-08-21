@@ -53,4 +53,4 @@ def generate_plots(score_csv: str) -> None:
     plt.close()
 
 if __name__ == "__main__":
-    generate_plots('Evaluation/Generation/Files/Ragas_metrics.csv')
+    generate_plots('Evaluation/Generation/Files/generation_metrics.csv')
