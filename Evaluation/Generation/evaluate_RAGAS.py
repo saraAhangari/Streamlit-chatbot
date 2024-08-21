@@ -1,13 +1,12 @@
-
 import pandas as pd
 from datasets import Dataset
 from ragas.metrics import answer_correctness, context_precision, faithfulness, context_utilization
 from ragas import evaluate
 import ast
-import os, sys
+import os
+import sys
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
-
+sys.path.insert(1, '/home/baranahangari/Desktop/Streamlit-chatbot/src')
 from utils import load_secrets
 
 def calculate_metrics(questions_csv: str, chunks_csv: str, output_csv: str) -> None:
@@ -22,7 +21,6 @@ def calculate_metrics(questions_csv: str, chunks_csv: str, output_csv: str) -> N
     Returns:
         None
     """
-
     secrets = load_secrets()
     openai_api_key = secrets["OPENAI_API_KEY"]
     os.environ["OPENAI_API_KEY"] = openai_api_key
@@ -31,7 +29,6 @@ def calculate_metrics(questions_csv: str, chunks_csv: str, output_csv: str) -> N
     chunks_df = pd.read_csv(chunks_csv)    
 
     questions_df['top_k_chunks'] = questions_df['top_k_chunks'].apply(ast.literal_eval)
-
     chunk_dict = pd.Series(chunks_df.chunk_content.values, index=chunks_df.chunk_number).to_dict()
 
     data_samples = {
@@ -41,7 +38,7 @@ def calculate_metrics(questions_csv: str, chunks_csv: str, output_csv: str) -> N
         'contexts': []
     }
 
-    for row in questions_df.iterrows():
+    for _, row in questions_df.iterrows():
         question = row['question']
         generated_answer = row['generated_answer'] 
         ground_truth = row['ground_truth']  
@@ -62,9 +59,10 @@ def calculate_metrics(questions_csv: str, chunks_csv: str, output_csv: str) -> N
     )
 
     score_df = score.to_pandas()
+    score_df = score_df[['question', 'answer_correctness', 'context_precision', 'faithfulness', 'context_utilization']]
     score_df.to_csv(output_csv, index=False)
 
     print(f"Metrics calculated and saved to {output_csv}")
 
 if __name__ == "__main__":
-    calculate_metrics('Evaluation/Generation/Files/QA_topk.csv', 'Evaluation/Generation/Files/chunks_content.csv', 'Evaluation/Generation/Files/Ragas_metrics.csv')
+    calculate_metrics('Evaluation/Generation/Files/QA_topk.csv', 'Evaluation/Generation/Files/chunks_content.csv', 'Evaluation/Generation/Files/generation_metrics.csv')
