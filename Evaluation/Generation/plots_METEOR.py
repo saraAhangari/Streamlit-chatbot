@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.pyplot import cm
 import pandas as pd
+from matplotlib.pyplot import cm
+
 
 def generate_plots(score_csv: str) -> None:
     """

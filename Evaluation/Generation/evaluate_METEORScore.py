@@ -1,6 +1,7 @@
 import nltk
-from nltk.translate.meteor_score import meteor_score
 import pandas as pd
+from nltk.translate.meteor_score import meteor_score
+
 
 def compute_meteor_scores(input_csv: str, output_csv: str) -> pd.DataFrame:
     """
