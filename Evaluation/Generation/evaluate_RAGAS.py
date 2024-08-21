@@ -1,13 +1,16 @@
-import pandas as pd
-from datasets import Dataset
-from ragas.metrics import answer_correctness, context_precision, faithfulness, context_utilization
-from ragas import evaluate
 import ast
 import os
 import sys
 
+import pandas as pd
+from datasets import Dataset
+from ragas import evaluate
+from ragas.metrics import (answer_correctness, context_precision,
+                           context_utilization, faithfulness)
+
 sys.path.insert(1, '/home/baranahangari/Desktop/Streamlit-chatbot/src')
 from utils import load_secrets
+
 
 def calculate_metrics(questions_csv: str, chunks_csv: str, output_csv: str) -> None:
     """

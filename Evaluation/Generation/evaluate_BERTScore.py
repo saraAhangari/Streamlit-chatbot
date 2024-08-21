@@ -1,5 +1,6 @@
-from bert_score import score
 import pandas as pd
+from bert_score import score
+
 
 def compute_bert_score(input_csv: str, output_csv: str) -> pd.DataFrame:
     """

@@ -1,17 +1,22 @@
-import pandas as pd
-from datasets import Dataset
-from ragas.metrics import answer_correctness, context_precision, faithfulness, context_utilization
-from ragas import evaluate
 import ast
-import os, sys
-from bert_score import score
+import os
+import sys
+
 import nltk
+import pandas as pd
+from bert_score import score
+from datasets import Dataset
 from nltk.translate.meteor_score import meteor_score
+from ragas import evaluate
+from ragas.metrics import (answer_correctness, context_precision,
+                           context_utilization, faithfulness)
+
 nltk.download('wordnet')
 
 sys.path.insert(1, '/home/baranahangari/Desktop/Streamlit-chatbot/src')
 
 from utils import load_secrets
+
 
 def calculate_ragas_metrics(questions_csv: str, chunks_csv: str) -> pd.DataFrame:
     """
