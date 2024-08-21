@@ -1,6 +1,5 @@
 import os
 import sys
-
 import pandas as pd
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
@@ -107,4 +106,4 @@ if __name__ == "__main__":
     ]
     
     df = get_chunks(questions, urls)
-    df.to_csv('Validation/Files/all_searched_chunks.csv', index=False)
+    df.to_csv('Evaluation/Retrieve/Files/all_searched_chunks.csv', index=False)

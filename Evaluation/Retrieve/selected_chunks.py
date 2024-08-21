@@ -167,4 +167,4 @@ if __name__ == "__main__":
     ]
     
     df = get_top_chunks(questions, urls)
-    df.to_csv('Validation/Files/selected_chunks.csv', index=False)
+    df.to_csv('Evaluation/Retrieve/Files/selected_chunks.csv', index=False)

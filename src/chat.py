@@ -90,7 +90,7 @@ def process_prompt(prompt: str, urls: list, engine) -> str:
     text_chunks = split_text(web_content)
     embeddings = generate_embeddings(text_chunks)
     client = chromadb.Client()
-    collection = client.create_collection("web_content")
+    collection = client.get_or_create_collection("web_content")
     store_embeddings(embeddings, text_chunks, collection)
     query_embedding = generate_embeddings([prompt])[0]
     top_k_chunks = retrieve_top_k_chunks(query_embedding, collection)
