@@ -13,7 +13,6 @@ def run_app() -> None:
     image = Image.open('logo.png')
     st.sidebar.image(image, width=70)
 
-    st.sidebar.header("Configuration")
     st.sidebar.markdown('## Disclaimer')
     st.sidebar.markdown("This application is for demonstration purposes only. Please use it as a guide.")
 
@@ -30,7 +29,7 @@ def run_app() -> None:
     for chat in st.session_state.chat_history:
         st.chat_message(chat["role"]).markdown(chat["content"])
 
-    prompt = st.chat_input("Ask me anything...")
+    prompt = st.chat_input("چه کمکی میتونم بکنم؟")
 
     if prompt:
         response = process_prompt(prompt, urls, engine)

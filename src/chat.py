@@ -84,7 +84,7 @@ def process_prompt(prompt: str, urls: list, engine) -> str:
         if user_data:
             return generate_personalized_response(user_data)
         else:
-            return "Sorry, your account number is not valid."
+            return "متاسفانه شماره حساب ورودی شما معتبر نیست"
 
     web_content = crawl_websites(urls)
     text_chunks = split_text(web_content)
