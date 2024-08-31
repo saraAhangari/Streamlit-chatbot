@@ -84,9 +84,7 @@ def compute_metrics(row: pd.Series) -> pd.Series:
     top_k_chunks = set(eval(row['Top-K searched chunks']))
 
     true_positive = len(expected_chunks.intersection(top_k_chunks))
-    false_positive = len(top_k_chunks - expected_chunks)
-    precision = true_positive / (true_positive + false_positive) if (true_positive + false_positive) > 0 else 0
-
+    precision = true_positive / len(top_k_chunks) if top_k_chunks else 0
     recall = true_positive / len(expected_chunks) if expected_chunks else 0
     f1_score = (2 * precision * recall) / (precision + recall) if (precision + recall) else 0
 
